@@ -4,10 +4,10 @@ services:
     build:
       context: .
       dockerfile: Dockerfile.alpine
-    image: enwaiax/peer2profit:test
+    image: peer2profit/peer2profit_linux:test
     restart: unless-stopped
     environment:
-      - email=chasing66@live.com
+      - email=rr145com@gmail.com
       - use_proxy=false
     volumes:
       - ./proxychains4.conf:/root/proxychains4.conf
