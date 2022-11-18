@@ -1,5 +1,5 @@
 FROM debian:11-slim
-LABEL org.opencontainers.image.authors="<chasing66@live.com>" version="0.61"
+LABEL org.opencontainers.image.authors="<rr145com@gmail.com>" version="0.63"
 COPY --from=peer2profit/peer2profit_linux /usr/bin/p2pclient /usr/bin/p2pclient
 RUN chmod +x /usr/bin/p2pclient
 RUN apt-get update && apt-get install -y --no-install-recommends ca-certificates procps proxychains4 \
